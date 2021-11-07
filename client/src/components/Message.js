@@ -1,6 +1,6 @@
 import { Avatar } from '@material-ui/core'
 import React from 'react'
-import './Message.css'
+import '../css/Message.css'
 
 
 function Message({ timestamp, user, message }) {

@@ -1,9 +1,9 @@
 import React from 'react'
-import './Sidebar.css'
-import SidebarChannel from './SidebarChannel.js'
+import '../css/Sidebar.css'
+import SidebarChannel from '../components/SidebarChannel'
 import { useSelector } from 'react-redux'
-import { selectUser } from './features/userSlice'
-import db, { auth } from './firebase'
+import { selectUser } from '../features/userSlice'
+import db, { auth } from '../firebase'
 import { useState } from 'react'
 import { useEffect } from 'react'
 

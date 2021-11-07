@@ -1,9 +1,9 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import './App.css';
-import Sidebar from './Sidebar.js'
-import Chat from './Chat.js'
-import Login from './Login.js'
+import Sidebar from './components/Sidebar.js'
+import Chat from './components/Chat.js'
+import Login from './components/Login.js'
 import { useEffect } from 'react'
 import { auth } from './firebase';
 import { selectUser } from './features/userSlice'
