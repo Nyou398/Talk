@@ -9,12 +9,10 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import db from '../firebase'
 import firebase from 'firebase'
-
 import AddCircleIcon from '@material-ui/icons/AddCircle'
 import CradGiftcardIcon from '@material-ui/icons/CardGiftcard'
 import GifIcon from '@material-ui/icons/Gif'
 import EmojiEmoticonsIcon from '@material-ui/icons/EmojiEmotions'
-
 
 function Chat() {
     const user = useSelector(selectUser)
