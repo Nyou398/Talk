@@ -10,6 +10,7 @@ function Message({ timestamp, user, message }) {
             <div className="message__info">
                 <h4>{user.displayName}
                     <span className="message__timestamp">
+                        {/* affiche la date a la qu'elle on a envoyer le message */}
                         {new Date(timestamp?.toDate()).toUTCString()}
                         </span>
                 </h4>

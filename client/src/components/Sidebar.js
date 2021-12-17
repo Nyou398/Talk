@@ -32,7 +32,6 @@ function Sidebar() {
     }, [])
 
     const handleAddChannel = () => {
-        // e.preventDefault()
         const channelName = prompt('Enter a new channel name')
         if (channelName) {
             db.collection('channels').add({
@@ -44,11 +43,14 @@ function Sidebar() {
 
     return (
         <div className="sidebar">
+            {/* Nom d'utilisateur */}
             <div className="sidebar__top">
-                <h3> Asma Aourachi </h3>
+                <h3> Talk Channel </h3>
                 <ExpandMoreIcon />
             </div>
+
             <div className="sidebar__channels">
+                {/* Ajouter une nouveau salon */}
                 <div className="sidebar__channelsHeaders">
                     <div className="sidebar__header">
                         <ExpandMoreIcon />
@@ -62,6 +64,8 @@ function Sidebar() {
                     ))}
                 </div>
             </div>
+
+            
             <div className="sidebar__voice">
                 <SignalCellularAltIcon
                     className="sidebar__voiceIcon"
@@ -77,7 +81,12 @@ function Sidebar() {
                     <CallIcon />
                 </div>
             </div>
+            
+
+
+
             <div className="sidebar__profile">
+                {/* Avatar de la personne connecter */}
                 <Avatar src={user.photo} onClick={() => auth.signOut()} />
                 <div className="sidebar__profileInfo">
                     <h3>{user.displayName}</h3>

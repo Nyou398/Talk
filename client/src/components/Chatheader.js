@@ -8,10 +8,13 @@ import SendRoundedIcon from '@material-ui/icons/SendRounded'
 import HelpRoundedIcon from '@material-ui/icons/HelpRounded'
 
 
+
+
 function Chatheader({ channelName }) {
     return (
         <div className="chatHeader">
             <div className="chatHeader__left">
+                {/* affiche le salon de chat dans le quel on se trouve */}
                 <h3><span className="chatHeader__hash">#</span>{channelName}</h3>
             </div>
             <div className="chatHeader__right">
